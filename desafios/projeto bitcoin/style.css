@@ -4,7 +4,7 @@
 :root{
     --cor0:#f3b15a;
     --Cor1:#F79413;
-    --cor2:#302f2f;
+    --cor2:#4e4b4b;
     --cor3:#ffffff;
     --cor4:rgb(198, 196, 196);
     --font-padrão:Arial, Helvetica, sans-serif;
@@ -21,14 +21,12 @@ header{
 }
 header img{
     width: 100%;
-    display: block;
-    margin: auto;
+    
 }
 nav  div{
     font-family:Arial, Helvetica, sans-serif ;
     background-color: var(--Cor1);
     font-size: 1.3em;
-    
     margin: -8px -8px 0px -8px;
     padding-top: 20px;
     padding-bottom: 18px;
@@ -39,10 +37,12 @@ nav a{
     color:var(--cor3);
     text-decoration: none;
     padding:11px;
+    transition-duration: 0.3s;
 }
 nav a:hover{
-    text-decoration: underline;
-    transition-duration: 0.3s;
+     background-color: rgba(255, 255, 255, 0.125);
+     border-radius: 8px;
+    
 }
 main{
     background-color: var(--cor3);
@@ -50,23 +50,20 @@ main{
     font-size: 17px;
     padding-left: 12px;
     padding-right: 12px;
-    margin-top: -17px;
+    padding-bottom: 25px;
+    margin-top: -21px;
     margin-left: 80px;
     margin-right: 80px;
+}
 
-}
-main img{
-    display: block;
-    margin: auto;
-    width: 100%;
-    
-    
-}
 main > h1{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 15px;
     font-size: 1.6em;
+}
+main h2{
+    text-align: center;
 }
 main > p{
     text-indent: 15px;
@@ -74,9 +71,32 @@ main > p{
     line-height: 1.5em;
     font-size: 1.1em;
 }
-aside{
-    background-color: black;   
+div img{
+    display: block;
+    margin: auto;
+}
+main a{
+    text-decoration: none;
+}
+main strong{
+    color: black;
 }
 footer{
-
+    color: white;
+    text-align: center;
+    background-color: #F79413;
+    padding: 15px;
+    margin: -19px;
+}
+footer a{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 15px;
+}
+footer a:hover{
+    background-color: rgba(255, 255, 255, 0.125);
+     border-radius: 8px;
 }
